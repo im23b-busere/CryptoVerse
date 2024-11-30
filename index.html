@@ -1,87 +1,168 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cryptex</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptex</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
 <header>
-   <!-- HEADER -->
-  <div class="container">
-    <a href="#" class="logo">
-      <img src="" width="86" height="86" alt="logo">
-      Cryptex
-    </a>
+    <!-- HEADER -->
+    <div class="container">
+        <a href="#" class="logo">
+            <img src="" width="86" height="86" alt="logo">
+            Cryptex
+        </a>
 
-    <nav class="navbar">
-      <ul class="navbar-list">
-        <li class="navbar-item"><a href="#hero" class="navbar-link active">Homepage</a></li>
-        <li class="navbar-item"><a href="#live-prices" class="navbar-link">Krypto Marktplatz</a></li>
-        <li class="navbar-item"><a href="#info" class="navbar-link">Was ist Krypto?</a></li>
-        <li class="navbar-item"><a href="#providers" class="navbar-link">Krypto Anbieter</a></li>
-        <li class="navbar-item"><a href="#instructions" class="navbar-link">Anleitung</a></li>
-      </ul>
-    </nav>
-  </div>
+        <nav class="navbar">
+            <ul class="navbar-list">
+
+                <li class="navbar-item">
+                    <a href="#hero" class="navbar-link active">Homepage</a>
+                </li>
+
+                <li class="navbar-item">
+                    <a href="#live-prices" class="navbar-link">Krypto Marktplatz</a>
+                </li>
+
+                <li class="navbar-item">
+                    <a href="#info" class="navbar-link">Was ist Krypto?</a>
+                </li>
+
+                <li class="navbar-item">
+                    <a href="#providers" class="navbar-link">Krypto Anbieter</a>
+                </li>
+
+                <li class="navbar-item">
+                    <a href="#instructions" class="navbar-link">Anleitung</a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
 </header>
 
 
 <main>
-  <article>
-     <!-- HERO -->
-    <section id="hero" class="section hero">
-      <div class="container">
-        <div class="hero-content">
-          <h1 class="hero-title">Lorem Ipsum</h1>
-          <p class="hero-text">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
-          </p>
-          <a href="#">Mehr erfahren</a>
-        </div>
-      </div>
+    <article>
+        <!-- HERO -->
+        <section id="hero" class="section hero">
+            <div class="container">
+                <div class="hero-content">
+
+                    <h1 class="hero-title">Lorem Ipsum</h1>
+
+                    <p class="hero-text">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
+                    </p>
+
+                    <a href="#">Mehr erfahren</a>
+
+                </div>
+            </div>
+        </section>
+    </article>
+    <!-- LIVE PRICES -->
+    <section id="live-prices" class="section live-prices">
+
+        <ul class="content">
+
+            <li>
+                <img src="images/Bitcoin.svg.png" width="24" height="24" alt="bitcoin logo">
+
+                <a href="#" class="card-title">
+                    Bitcoin <span class="span">BTC/USD</span>
+                </a>
+
+                <p id="btc-price"></p>
+
+                    <div class="badge red">-0.79%</div>
+            </li>
+
+            <li>
+                <img src="images/Ethereum_logo_2014.svg.png" width="24" height="24" alt="bitcoin logo">
+
+                <a href="#" class="card-title">
+                    Ethereum <span class="span">ETH/USD</span>
+                </a>
+
+                <p id="eth-price"></p>
+
+                <div class="badge green">+10.55%</div>
+            </li>
+
+            <li>
+                <img src="images/1200px-LTC-400.png" width="24" height="24" alt="bitcoin logo">
+
+                <a href="#" class="card-title">
+                    Litecoin <span class="span">LITE/USD</span>
+                </a>
+
+                <p id="ltc-price"></p>
+
+                <div class="badge red">-0.01%</div>
+            </li>
+
+
+            <li>
+                <img src="images/dogecoin.svg" width="24" height="24" alt="bitcoin logo">
+
+                <a href="#" class="card-title">
+                    Doge <span class="span">DOGE/USD</span>
+                </a>
+
+                <p id="doge-price"></p>
+
+                <div class="badge red">-1.24%</div>
+            </li>
+
+
+        </ul>
+
     </section>
-  </article>
+    <!-- CRYPTO INFO -->
+    <section id="info" class="section info">
 
-  <!-- LIVE PRICES -->
-  <section id="live-prices" class="section live-prices">
-    <div class="container">
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr...
-    </div>
-  </section>
-  <!-- CRYPTO INFO -->
-  <section id="info" class="section info">
-    <div class="container">
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr...
-    </div>
-  </section>
-  <!-- CRYPTO PROVIDERS-->
-  <section id="providers" class="section providers">
-    <div class="container">
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr...
-    </div>
-  </section>
-  <!-- INSTRUCTIONS -->
+        <div class="container">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr...
+        </div>
 
-  <section id="instructions" class="section instructions">
-    <div class="container">
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr...
-    </div>
-  </section>
+    </section>
+    <!-- CRYPTO PROVIDERS-->
+    <section id="providers" class="section providers">
+
+        <div class="container">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr...
+        </div>
+
+    </section>
+
+    <!-- INSTRUCTIONS -->
+    <section id="instructions" class="section instructions">
+
+        <div class="container">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr...
+        </div>
+
+    </section>
 </main>
 
 <footer>
-  <div class="container">
-    <div class="footer-brand">
-      <a href="#" class="logo">
-        <img src="" width="50" height="50" alt="Cryptex logo">
-        Cryptex
-      </a>
-      <h2 class="footer-title">Kontakt</h2>
+    <div class="container">
+        <div class="footer-brand">
+
+            <a href="#" class="logo">
+                <img src="" width="50" height="50" alt="Cryptex logo">
+                Cryptex
+            </a>
+
+            <h2 class="footer-title">Kontakt</h2>
+
+        </div>
     </div>
-  </div>
 </footer>
 
 </body>
