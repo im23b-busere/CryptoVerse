@@ -10,6 +10,9 @@
     --fs-7: 1.4rem;
     --fs-8: 1.2rem;
 
+    /* font family */
+    --ff-dm-sans: "DM Sans", sans-serif;
+
     /* colors */
     --cadet-blue-crayola: hsl(227, 13%, 73%);
     --maximum-yellow-red: hsl(41, 95%, 61%);
@@ -46,13 +49,24 @@ body {
     margin: 0;
     padding: 0;
     color: var(--white);
+    font-family: var(--ff-dm-sans);
+    font-size: 1.6rem;
 }
+
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+}
+.logo {
+    color: var(--white);
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 /* color sections*/
@@ -219,7 +233,7 @@ header {
 }
 
 .card-title .span {
-    font-size: var(--fs-7);
+    font-size: var(--fs-8);
     color: var(--roman-silver);
 }
 
