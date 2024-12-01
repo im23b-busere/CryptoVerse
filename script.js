@@ -6,6 +6,7 @@ async function fetchCryptoPrices() {
     try {
         const response = await fetch(API_URL);
         if (!response.ok) {
+            updatePricesFailedFetch();
             throw new Error('Failed to fetch data');
         }
         const data = await response.json();
@@ -15,12 +16,23 @@ async function fetchCryptoPrices() {
     }
 }
 
+
+// Update prices based on fetched data
 function updatePrices(data) {
     document.getElementById('btc-price').textContent = `$${data.bitcoin.usd}`;
     document.getElementById('eth-price').textContent = `$${data.ethereum.usd}`;
     document.getElementById('doge-price').textContent = `$${data.dogecoin.usd}`;
     document.getElementById('ltc-price').textContent = `$${data.litecoin.usd}`;
 
+}
+
+
+// Update prices with default values if fetch fails
+function updatePricesFailedFetch() {
+    document.getElementById('btc-price').textContent = "$97038";
+    document.getElementById('eth-price').textContent = "$3697.16";
+    document.getElementById('doge-price').textContent = "$109.79";
+    document.getElementById('ltc-price').textContent = "$0.428462";
 }
 
 // Fetch prices on page load and every 30 seconds
