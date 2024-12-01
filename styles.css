@@ -43,7 +43,6 @@
 }
 
 
-
 body {
     background-color: var(--eerie-black-1);
     margin: 0;
@@ -60,6 +59,7 @@ header {
     align-items: center;
     padding: 10px 20px;
 }
+
 .logo {
     color: var(--white);
     font-size: 2.5rem;
@@ -264,3 +264,83 @@ header {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* Info */
+
+/* providers */
+
+/* instructions */
+.section-title, .section-text {
+    text-align: center;
+}
+
+.section-text {
+    color: var(--cadet-blue-crayola)
+}
+
+.instruction-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-block-start: 50px;
+}
+
+.instruction-card {
+    text-align: center;
+}
+
+.instruction-card .card-banner {
+    transition: var(--transition-2);
+}
+
+.instruction-card:hover .card-banner {
+    transform: rotateY(1turn);
+}
+
+.instruction-card .img {
+    margin-inline: auto;
+    margin-block-end: 12px;
+}
+
+.instruction-card .card-subtitle {
+    color: var(--cadet-blue-crayola);
+    font-size: var(--fs-8);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.instruction-card .card-title {
+    font-size: var(--fs-4);
+    margin-block: 5px 15px;
+}
+
+.instruction-card .card-text {
+    color: var(--cadet-blue-crayola);
+    padding-inline: 20px;
+}
+
+.instruction-list li {
+    position: relative;
+    text-align: center;
+}
+
+
+/* line between steps */
+.instruction-list li::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    width: 50px;
+    height: 2px;
+    background-color: var(--cadet-blue-crayola);
+    transform: translateY(-50%);
+}
+
+.instruction-list li:last-child::after {
+    display: none;
+}
+
+
+
+
