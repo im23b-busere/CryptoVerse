@@ -55,6 +55,10 @@ body {
     font-size: 1.6rem;
 }
 
+h2 {
+    font-size: var(--fs-2)
+}
+
 
 header {
     display: flex;
@@ -285,6 +289,53 @@ header {
 }
 
 /* Info */
+.info-banner {
+    margin-block-end: 40px;
+}
+
+
+.info .container ul > li {
+    list-style: none;
+}
+
+.info .container {
+    display: grid;
+    grid-template-columns: 1.6fr 2fr;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+}
+
+.info-content {
+    max-width: 800px;
+    margin:0 ;
+}
+
+.section-item .title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-block-end: 15px;
+}
+
+.section-item .title-wrapper ion-icon {
+    flex-shrink: 0;
+    color: var(--blue-crayola);
+    font-size: 24px;
+}
+
+.info-content .section-title {
+    text-align: left;
+    margin: 0 0 20px 0;
+}
+.section-text {
+    text-align: left; /* Textblock linksbündig */
+    margin: 0 0 20px 0; /* Optional: Abstand nach unten */
+}
+
+
+
+
 
 /* providers */
 
