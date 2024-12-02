@@ -42,6 +42,9 @@
     --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: var(--eerie-black-1);
@@ -117,15 +120,14 @@ header {
     color: var(--white);
 }
 
+
+
 .navbar-link.active, .navbar-link:hover {
     background-color: var(--blue-crayola);
 }
 
 
 /* Hero Section */
-.hero {
-    padding-block: 150px 140px;
-}
 
 .hero-content {
     margin-block-end: 80px;
@@ -169,8 +171,9 @@ header {
 
 
 .section {
-    padding-block: 100px;
+    padding-block: 10px;
 }
+
 
 .hero-content a {
     position: relative;
