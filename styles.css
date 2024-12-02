@@ -86,11 +86,11 @@ header {
 }
 
 .section.providers {
-    background-color: var(--eerie-black-1);
+    background-color: var(--eerie-black-2);
 }
 
 .section.instructions {
-    background-color: var(--eerie-black-2);
+    background-color: var(--eerie-black-1);
 }
 
 .container {
