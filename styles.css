@@ -110,6 +110,10 @@ header {
     margin-right: 30px;
 }
 
+.navbar {
+    border-radius: 15px;
+}
+
 .navbar ul {
     display: flex;
     margin: 0;
@@ -172,7 +176,7 @@ header {
 
 
 .section {
-    padding-block: 10px;
+    padding-block: 50px;
 }
 
 
@@ -364,8 +368,6 @@ header {
 }
 
 
-/* providers */
-
 /* instructions */
 h2.section-title, #instructionText{
     text-align: center;
@@ -437,6 +439,38 @@ h2.section-title, #instructionText{
 .instruction-list li:last-child::after {
     display: none;
 }
+
+
+/* providers */
+#providerTitle {
+    text-align: left;
+}
+
+
+.providers-content .section-text {
+    color: var(--cadet-blue-crayola);
+}
+
+.provider-banner {
+    max-width: max-content;
+    margin-inline: auto;
+}
+
+.providers .container {
+    margin: 0 250px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.providers .section-title {
+    margin-bottom: 10px; /* Reduzierter Abstand zum Text */
+}
+
+.providers .section-text {
+    margin-top: 10px;
+}
+
 
 
 /* footer */
