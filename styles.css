@@ -74,6 +74,8 @@ header {
     display: flex;
     align-items: center;
     gap: 5px;
+    text-decoration: none;
+    margin-right: 30px;
 }
 
 /* color sections*/
@@ -103,16 +105,6 @@ header {
     padding: 10px 20px 20px 20px;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    margin-right: 30px;
-}
-
-.navbar {
-    border-radius: 15px;
-}
 
 .navbar ul {
     display: flex;
