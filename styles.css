@@ -125,7 +125,6 @@ header {
 }
 
 
-
 .navbar-link.active, .navbar-link:hover {
     background-color: var(--blue-crayola);
 }
@@ -148,8 +147,6 @@ header {
     grid-template-columns: 1fr 2fr;
     align-items: center;
 }
-
-
 
 
 /* Hero button */
@@ -288,64 +285,94 @@ header {
     transform: translateY(0);
 }
 
-/* Info */
+/* Info Section */
+.section.info {
+    padding: 50px 20px;
+    background-color: var(--eerie-black-2);
+}
+
 .info-banner {
-    margin-block-end: 40px;
-}
-
-
-.info .container ul > li {
-    list-style: none;
-}
-
-.info .container {
-    display: grid;
-    grid-template-columns: 1.6fr 2fr;
-    align-items: center;
-    gap: 30px;
-    justify-content: center;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .info-content {
     max-width: 800px;
-    margin:0 ;
-}
-
-.section-item .title-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-block-end: 15px;
-}
-
-.section-item .title-wrapper ion-icon {
-    flex-shrink: 0;
-    color: var(--blue-crayola);
-    font-size: 24px;
+    margin: auto;
+    text-align: left;
 }
 
 .info-content .section-title {
+    font-size: var(--fs-3);
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 20px;
     text-align: left;
-    margin: 0 0 20px 0;
-}
-.section-text {
-    text-align: left; /* Textblock linksbündig */
-    margin: 0 0 20px 0; /* Optional: Abstand nach unten */
 }
 
+.info-content .section-text {
+    font-size: var(--fs-6);
+    color: var(--cadet-blue-crayola);
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
 
+.section-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
+.section-item {
+    margin-bottom: 30px;
+    background-color: var(--eerie-black-1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px var(--black_10);
+    transition: transform var(--transition-1), box-shadow var(--transition-1);
+}
+
+.section-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px var(--smocky-black_30);
+}
+
+.title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.title-wrapper ion-icon {
+    color: var(--blue-crayola);
+    font-size: 30px;
+}
+
+.list-title {
+    font-size: var(--fs-5);
+    font-weight: 600;
+    color: var(--white);
+}
+
+.item-text {
+    font-size: var(--fs-7);
+    color: var(--cadet-blue-crayola);
+    line-height: 1.6;
+
+}
 
 
 /* providers */
 
 /* instructions */
-.section-title, .section-text {
+h2.section-title, #instructionText{
     text-align: center;
 }
 
 .section-text {
-    color: var(--cadet-blue-crayola)
+    color: var(--cadet-blue-crayola),
 }
 
 .instruction-list {
@@ -413,7 +440,7 @@ header {
 
 
 /* footer */
-.footer-contact-link{
+.footer-contact-link {
     color: white;
 }
 
