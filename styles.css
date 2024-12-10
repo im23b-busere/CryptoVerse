@@ -414,6 +414,11 @@ h2.section-title, #instructionText{
     text-align: center;
 }
 
+.text-link {
+    color: var(--blue-crayola);
+    text-decoration: none;
+}
+
 
 /* line between steps */
 .instruction-list li::after {
