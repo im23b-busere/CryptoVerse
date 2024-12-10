@@ -127,7 +127,6 @@ header {
 
 
 /* Hero Section */
-
 .hero-content {
     margin-block-end: 80px;
 }
@@ -140,7 +139,7 @@ header {
 .hero .container {
     margin: 0 250px 0;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1.5fr 2fr;
     align-items: center;
 }
 
@@ -469,6 +468,5 @@ h2.section-title, #instructionText{
 .footer-contact-link {
     color: white;
 }
-
 
 
