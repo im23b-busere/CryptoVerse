@@ -122,6 +122,7 @@ header {
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px var(--black_10);
+    position: relative;
 }
 
 .provider-logo {
@@ -187,6 +188,31 @@ header {
 /* Entferne Überschriften für Pros und Cons */
 .pros-title, .cons-title {
     display: none;
+}
+
+.btn {
+    color: var(--white);
+    border-radius: 50px;
+    text-decoration: none;
+    position: relative;
+    background-color: var(--blue-crayola);
+    max-width: max-content;
+    font-weight: 700;
+    padding: 13px 30px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-primary {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: var(--light-blue);
 }
 
 [data-section] > * {
