@@ -463,7 +463,7 @@ h2.section-title, #instructionText {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #007bff;
+  background-color:var(--blue-crayola);
   color: white;
   border-radius: 50%;
   width: 50px;
@@ -477,7 +477,7 @@ h2.section-title, #instructionText {
 }
 
 .chat-icon:hover {
-  background-color: #0056b3;
+  background-color: var(--blue-crayola);
 }
 
 /* Chat Window */
@@ -501,7 +501,7 @@ h2.section-title, #instructionText {
 
 .chat-header {
   padding: 10px;
-  background-color: #007bff;
+  background-color: var(--blue-crayola);
   color: white;
   font-size: 16px;
   border-top-left-radius: 10px;
@@ -524,7 +524,7 @@ h2.section-title, #instructionText {
   padding: 10px;
   overflow-y: auto;
   font-size: 14px;
-  background-color: #f9f9f9;
+  background-color: white;
 }
 
 .chat-message {
@@ -537,7 +537,7 @@ h2.section-title, #instructionText {
 
 .chat-message.user {
   text-align: right;
-  color: #007bff;
+  color: var(--blue-crayola);
 }
 
 .chat-input-container {
@@ -554,7 +554,7 @@ h2.section-title, #instructionText {
 }
 
 .send-message {
-  background-color: #007bff;
+  background-color:  var(--blue-crayola);
   color: white;
   border: none;
   padding: 5px 10px;
@@ -562,5 +562,5 @@ h2.section-title, #instructionText {
 }
 
 .send-message:hover {
-  background-color: #0056b3;
+  background-color: var(--light-blue);
 }
