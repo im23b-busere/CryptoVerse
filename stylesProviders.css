@@ -170,6 +170,17 @@ header {
     margin-bottom: 0.5rem;
 }
 
+[data-section] > * {
+    transform: translateY(50px);
+    opacity: 0;
+    transition: var(--transition-3);
+}
+
+[data-section].active > * {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 
 
