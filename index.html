@@ -1,315 +1,317 @@
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CryptoVerse</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoVerse</title>
+    <link rel="stylesheet" href="styles.css">
 
-  <!-- GOOGLE FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <!-- IONIC ICONS FRAMEWORK -->
-  <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@6.0.3/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@6.0.3/dist/ionicons/ionicons.js"></script>
+    <!-- IONIC ICONS FRAMEWORK -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@6.0.3/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@6.0.3/dist/ionicons/ionicons.js"></script>
 
-  <script src="script.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
 
 <header>
-  <!-- HEADER -->
-  <div class="container">
-    <a href="index.html" class="logo">
-      <img src="images/CryptoVerse.png" width="86" height="86" alt="logo">
-      CryptoVerse
-    </a>
+    <!-- HEADER -->
+    <div class="container">
+        <a href="index.html" class="logo">
+            <img src="images/CryptoVerse.png" width="86" height="86" alt="logo">
+            CryptoVerse
+        </a>
 
-    <nav class="navbar">
-      <ul class="navbar-list">
+        <nav class="navbar">
+            <ul class="navbar-list">
 
-        <li class="navbar-item">
-          <a href="#hero" class="navbar-link active">Homepage</a>
-        </li>
+                <li class="navbar-item">
+                    <a href="#hero" class="navbar-link active">Homepage</a>
+                </li>
 
-        <li class="navbar-item">
-          <a href="#live-prices" class="navbar-link">Krypto Marktplatz</a>
-        </li>
+                <li class="navbar-item">
+                    <a href="#live-prices" class="navbar-link">Krypto Marktplatz</a>
+                </li>
 
-        <li class="navbar-item">
-          <a href="#info" class="navbar-link">Was ist Krypto?</a>
-        </li>
+                <li class="navbar-item">
+                    <a href="#info" class="navbar-link">Was ist Krypto?</a>
+                </li>
 
-        <li class="navbar-item">
-          <a href="#instruction" class="navbar-link">Anleitung</a>
-        </li>
+                <li class="navbar-item">
+                    <a href="#instruction" class="navbar-link">Anleitung</a>
+                </li>
 
-        <li class="navbar-item">
-          <a href="#providers" class="navbar-link">Anbieter</a>
-        </li>
+                <li class="navbar-item">
+                    <a href="#providers" class="navbar-link">Anbieter</a>
+                </li>
 
-      </ul>
-    </nav>
-  </div>
+            </ul>
+        </nav>
+    </div>
 </header>
 
 
 <main>
-  <article>
-    <!-- HERO -->
-    <section id="hero" class="section hero" data-section>
-      <div class="container">
-        <div class="hero-content">
+    <article>
+        <!-- HERO -->
+        <section id="hero" class="section hero" data-section>
+            <div class="container">
+                <div class="hero-content">
 
-          <h1 class="hero-title">Dein Einstieg in die Kryptowelt</h1>
+                    <h1 class="hero-title">Dein Einstieg in die Kryptowelt</h1>
 
-          <p class="hero-text">
-            Kryptowährungen leicht gemacht.
-          </p>
+                    <p class="hero-text">
+                        Kryptowährungen leicht gemacht.
+                    </p>
 
-          <a href="#live-prices" class="btn btn-primary">Mehr erfahren</a>
+                    <a href="#live-prices" class="btn btn-primary">Mehr erfahren</a>
 
-        </div>
-        <figure class="hero-banner">
-          <img src="images/hero.png" width="600" height="499" alt="hero banner">
-        </figure>
-      </div>
-    </section>
-  </article>
-  <!-- LIVE PRICES -->
-  <section id="live-prices" class="section live-prices" data-section>
-
-    <ul class="content">
-
-      <li>
-        <img src="images/Bitcoin.svg.png" width="24" height="24" alt="bitcoin logo">
-
-        <p href="#" class="card-title">
-          Bitcoin <span class="span">BTC/USD</span>
-        </p>
-
-        <p id="btc-price"></p>
-
-        <div class="badge red">-0.79%</div>
-      </li>
-
-      <li>
-        <img src="images/Ethereum_logo_2014.svg.png" width="24" height="24" alt="ethereum logo">
-
-        <p href="#" class="card-title">
-          Ethereum <span class="span">ETH/USD</span>
-        </p>
-
-        <p id="eth-price"></p>
-
-        <div class="badge green">+10.55%</div>
-      </li>
-
-      <li>
-        <img src="images/1200px-LTC-400.png" width="24" height="24" alt="LTC logo">
-
-        <p href="#" class="card-title">
-          Litecoin <span class="span">LITE/USD</span>
-        </p>
-
-        <p id="ltc-price"></p>
-
-        <div class="badge red">-0.01%</div>
-      </li>
-
-
-      <li>
-        <img src="images/dogecoin.svg" width="24" height="24" alt="dogecoin logo">
-
-        <p href="#" class="card-title">
-          Doge <span class="span">DOGE/USD</span>
-        </p>
-
-        <p id="doge-price"></p>
-
-        <div class="badge red">-1.24%</div>
-      </li>
-
-
-    </ul>
-
-  </section>
-
-  <!-- CRYPTO INFO -->
-  <section id="info" class="section info" data-section>
-
-    <div class="container">
-
-      <figure class="info-banner">
-        <img src="images/coin.png" width="600" height="600" loading="lazy" alt="info banner">
-      </figure>
-
-      <div class="info-content">
-
-        <h2 class="h2 section-title">Was ist Krypto</h2>
-
-        <p class="section-text">
-          Kryptowährungen sind digitale oder virtuelle Währungen, die Kryptografie verwenden, um Transaktionen
-          zu sichern. Diese Art von Währung ermöglicht es, Transaktionen dezentral und ohne zentrale Autorität
-          durchzuführen, was sie besonders sicher und transparent macht.
-        </p>
-
-        <ul class="section-list">
-
-          <li class="section-item">
-            <div class="title-wrapper">
-              <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
-
-              <h3 class="h3 list-title">Dezentrale digitale Währungen</h3>
+                </div>
+                <figure class="hero-banner">
+                    <img src="images/hero.png" width="600" height="499" alt="hero banner">
+                </figure>
             </div>
+        </section>
+    </article>
+    <!-- LIVE PRICES -->
+    <section id="live-prices" class="section live-prices" data-section>
 
-            <p class="item-text">
-              Kryptowährungen ermöglichen es, Finanztransaktionen ohne Zwischenhändler durchzuführen. Diese digitalen
-              Währungen basieren auf Blockchain-Technologie, die eine dezentrale Verwaltung sicherstellt. Nutzer können
-              so schneller und sicherer Geld senden oder empfangen.
+        <ul class="content">
 
-            </p>
-          </li>
+            <li>
+                <img src="images/Bitcoin.svg.png" width="24" height="24" alt="bitcoin logo">
 
-          <li class="section-item">
-            <div class="title-wrapper">
-              <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+                <p href="#" class="card-title">
+                    Bitcoin <span class="span">BTC/USD</span>
+                </p>
 
-              <h3 class="h3 list-title">Sicherheit durch Kryptografie</h3>
-            </div>
+                <p id="btc-price"></p>
 
-            <p class="item-text">
-              Durch den Einsatz moderner Kryptografie wird die Integrität und Sicherheit von Transaktionen
-              gewährleistet. Jede Überweisung wird verschlüsselt und in einem öffentlichen, unveränderbaren Register
-              gespeichert, was das Vertrauen in das System stärkt.
+                <div class="badge red">-0.79%</div>
+            </li>
 
-            </p>
-          </li>
+            <li>
+                <img src="images/Ethereum_logo_2014.svg.png" width="24" height="24" alt="ethereum logo">
+
+                <p href="#" class="card-title">
+                    Ethereum <span class="span">ETH/USD</span>
+                </p>
+
+                <p id="eth-price"></p>
+
+                <div class="badge green">+10.55%</div>
+            </li>
+
+            <li>
+                <img src="images/1200px-LTC-400.png" width="24" height="24" alt="LTC logo">
+
+                <p href="#" class="card-title">
+                    Litecoin <span class="span">LITE/USD</span>
+                </p>
+
+                <p id="ltc-price"></p>
+
+                <div class="badge red">-0.01%</div>
+            </li>
+
+
+            <li>
+                <img src="images/dogecoin.svg" width="24" height="24" alt="dogecoin logo">
+
+                <p href="#" class="card-title">
+                    Doge <span class="span">DOGE/USD</span>
+                </p>
+
+                <p id="doge-price"></p>
+
+                <div class="badge red">-1.24%</div>
+            </li>
+
 
         </ul>
 
-        <a href="https://de.wikipedia.org/wiki/Kryptow%C3%A4hrung" class="btn btn-primary">Mehr erfahren</a>
+    </section>
 
-      </div>
-    </div>
-  </section>
+    <!-- CRYPTO INFO -->
+    <section id="info" class="section info" data-section>
 
-  <!-- INSTRUCTIONS -->
-  <section id="instruction" class="section instructions" data-section>
+        <div class="container">
 
-    <h2 class="section-title">Wie es funktioniert</h2>
+            <figure class="info-banner">
+                <img src="images/coin.png" width="600" height="600" loading="lazy" alt="info banner">
+            </figure>
 
-    <p id="instructionText" class="section-text">
-      Folgen Sie diesen vier einfachen Schritten, um in die Welt der Kryptowährungen einzutauchen
-    </p>
+            <div class="info-content">
 
-    <ul class="instruction-list">
-      <!-- STEP 1 -->
-      <li>
-        <div class="instruction-card">
+                <h2 class="h2 section-title">Was ist Krypto</h2>
 
-          <figure class="card-banner">
-            <img src="images/instruction-1.png" width="96" height="96" loading="lazy" alt="Step 1"
-                 class="img">
-          </figure>
+                <p class="section-text">
+                    Kryptowährungen sind digitale oder virtuelle Währungen, die Kryptografie verwenden, um Transaktionen
+                    zu sichern. Diese Art von Währung ermöglicht es, Transaktionen dezentral und ohne zentrale Autorität
+                    durchzuführen, was sie besonders sicher und transparent macht.
+                </p>
 
-          <p class="card-subtitle">Schritt 1</p>
+                <ul class="section-list">
 
-          <h3 class="h3 card-title">Download</h3>
+                    <li class="section-item">
+                        <div class="title-wrapper">
+                            <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
 
-          <p class="card-text">
-            Wählen Sie den für Sie passenden <a href="#providers" class="text-link">Anbieter</a> aus.
-          </p>
+                            <h3 class="h3 list-title">Dezentrale digitale Währungen</h3>
+                        </div>
 
+                        <p class="item-text">
+                            Kryptowährungen ermöglichen es, Finanztransaktionen ohne Zwischenhändler durchzuführen.
+                            Diese digitalen
+                            Währungen basieren auf Blockchain-Technologie, die eine dezentrale Verwaltung sicherstellt.
+                            Nutzer können
+                            so schneller und sicherer Geld senden oder empfangen.
+
+                        </p>
+                    </li>
+
+                    <li class="section-item">
+                        <div class="title-wrapper">
+                            <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+
+                            <h3 class="h3 list-title">Sicherheit durch Kryptografie</h3>
+                        </div>
+
+                        <p class="item-text">
+                            Durch den Einsatz moderner Kryptografie wird die Integrität und Sicherheit von Transaktionen
+                            gewährleistet. Jede Überweisung wird verschlüsselt und in einem öffentlichen,
+                            unveränderbaren Register
+                            gespeichert, was das Vertrauen in das System stärkt.
+
+                        </p>
+                    </li>
+
+                </ul>
+
+                <a href="https://de.wikipedia.org/wiki/Kryptow%C3%A4hrung" class="btn btn-primary">Mehr erfahren</a>
+
+            </div>
         </div>
-      </li>
+    </section>
 
-      <!-- STEP 2 -->
-      <li>
-        <div class="instruction-card">
+    <!-- INSTRUCTIONS -->
+    <section id="instruction" class="section instructions" data-section>
 
-          <figure class="card-banner">
-            <img src="images/instruction-2.png" width="96" height="96" loading="lazy" alt="Step 2"
-                 class="img">
-          </figure>
+        <h2 class="section-title">Wie es funktioniert</h2>
 
-          <p class="card-subtitle">Schritt 2</p>
-
-          <h3 class="h3 card-title">Wallet verbinden</h3>
-
-          <p class="card-text">
-            Verbinden Sie Ihr Wallet mit der ausgewählten Handelsplattform
-          </p>
-
-        </div>
-      </li>
-
-      <!-- STEP 3 -->
-      <li>
-        <div class="instruction-card">
-
-          <figure class="card-banner">
-            <img src="images/instruction-3.png" width="96" height="96" loading="lazy" alt="Step 3"
-                 class="img">
-          </figure>
-
-          <p class="card-subtitle">Schritt 3</p>
-
-          <h3 class="h3 card-title">Traden beginnen</h3>
-
-          <p class="card-text">
-            Kaufen und verkaufen Sie Kryptowährungen auf der Plattform Ihrer Wahl.
-          </p>
-
-        </div>
-      </li>
-
-      <!-- STEP 4 -->
-      <li>
-        <div class="instruction-card">
-
-          <figure class="card-banner">
-            <img src="images/instruction-4.png" width="96" height="96" loading="lazy" alt="Step 4"
-                 class="img">
-          </figure>
-
-          <p class="card-subtitle">Schritt 4</p>
-
-          <h3 class="h3 card-title">Geld verdienen</h3>
-
-          <p class="card-text">
-            Nutzen Sie Marktchancen, um von Kursschwankungen zu profitieren.
-          </p>
-
-        </div>
-      </li>
-
-    </ul>
-
-  </section>
-
-  <!-- CRYPTO PROVIDERS-->
-  <section class="section providers" id="providers" data-section="">
-    <div class="container">
-
-      <div class="providers-content">
-        <h2 id="providerTitle" class="section-title">Anbieter</h2>
-        <p class="section-text">
-          Vergleichen Sie die besten Anbieter und finden Sie das perfekte Angebot. Klicken
-          Sie auf den untenstehenden Button, um mehr Details zu erhalten.
+        <p id="instructionText" class="section-text">
+            Folgen Sie diesen vier einfachen Schritten, um in die Welt der Kryptowährungen einzutauchen
         </p>
-        <a href="providers.html" class="btn btn-secondary">Anbieter vergleichen</a>
-      </div>
 
-      <figure class="provider-banner">
-        <img src="images/providers.png" width="450" height="400" alt="provider banner">
-      </figure>
+        <ul class="instruction-list">
+            <!-- STEP 1 -->
+            <li>
+                <div class="instruction-card">
 
-    </div>
-  </section>
+                    <figure class="card-banner">
+                        <img src="images/instruction-1.png" width="96" height="96" loading="lazy" alt="Step 1"
+                             class="img">
+                    </figure>
+
+                    <p class="card-subtitle">Schritt 1</p>
+
+                    <h3 class="h3 card-title">Download</h3>
+
+                    <p class="card-text">
+                        Wählen Sie den für Sie passenden <a href="#providers" class="text-link">Anbieter</a> aus.
+                    </p>
+
+                </div>
+            </li>
+
+            <!-- STEP 2 -->
+            <li>
+                <div class="instruction-card">
+
+                    <figure class="card-banner">
+                        <img src="images/instruction-2.png" width="96" height="96" loading="lazy" alt="Step 2"
+                             class="img">
+                    </figure>
+
+                    <p class="card-subtitle">Schritt 2</p>
+
+                    <h3 class="h3 card-title">Wallet verbinden</h3>
+
+                    <p class="card-text">
+                        Verbinden Sie Ihr Wallet mit der ausgewählten Handelsplattform
+                    </p>
+
+                </div>
+            </li>
+
+            <!-- STEP 3 -->
+            <li>
+                <div class="instruction-card">
+
+                    <figure class="card-banner">
+                        <img src="images/instruction-3.png" width="96" height="96" loading="lazy" alt="Step 3"
+                             class="img">
+                    </figure>
+
+                    <p class="card-subtitle">Schritt 3</p>
+
+                    <h3 class="h3 card-title">Traden beginnen</h3>
+
+                    <p class="card-text">
+                        Kaufen und verkaufen Sie Kryptowährungen auf der Plattform Ihrer Wahl.
+                    </p>
+
+                </div>
+            </li>
+
+            <!-- STEP 4 -->
+            <li>
+                <div class="instruction-card">
+
+                    <figure class="card-banner">
+                        <img src="images/instruction-4.png" width="96" height="96" loading="lazy" alt="Step 4"
+                             class="img">
+                    </figure>
+
+                    <p class="card-subtitle">Schritt 4</p>
+
+                    <h3 class="h3 card-title">Geld verdienen</h3>
+
+                    <p class="card-text">
+                        Nutzen Sie Marktchancen, um von Kursschwankungen zu profitieren.
+                    </p>
+
+                </div>
+            </li>
+
+        </ul>
+
+    </section>
+
+    <!-- CRYPTO PROVIDERS-->
+    <section class="section providers" id="providers" data-section="">
+        <div class="container">
+
+            <div class="providers-content">
+                <h2 id="providerTitle" class="section-title">Anbieter</h2>
+                <p class="section-text">
+                    Vergleichen Sie die besten Anbieter und finden Sie das perfekte Angebot. Klicken
+                    Sie auf den untenstehenden Button, um mehr Details zu erhalten.
+                </p>
+                <a href="providers.html" class="btn btn-secondary">Anbieter vergleichen</a>
+            </div>
+
+            <figure class="provider-banner">
+                <img src="images/providers.png" width="450" height="400" alt="provider banner">
+            </figure>
+
+        </div>
+    </section>
 
 
 </main>
@@ -317,37 +319,39 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="container">
-    <div class="footer-brand">
+    <div class="container">
+        <div class="footer-brand">
+            <h2 class="footer-title">Kontakt</h2>
 
-      <h2 class="footer-title">Kontakt</h2>
+            <a href="mailto:erik.buser@student.ksh.ch" class="footer-contact-link">erik.buser@student.ksh.ch</a><br>
+            <a href="mailto:sandro.schmid@student.ksh.ch"
+               class="footer-contact-link">sandro.schmid@student.ksh.ch</a><br>
+            <a href="mailto:joshua.federi@student.ksh.ch" class="footer-contact-link">joshua.federi@student.ksh.ch</a>
+        </div>
 
-      <a href="mailto:erik.buser@student.ksh.ch" class="footer-contact-link">erik.buser@student.ksh.ch</a><br>
-      <a href="mailto:sandro.schmid@student.ksh.ch"
-         class="footer-contact-link">sandro.schmid@student.ksh.ch</a><br>
-      <a href="mailto:joshua.federi@student.ksh.ch" class="footer-contact-link">joshua.federi@student.ksh.ch</a>
+        <div class="footer-links">
+            <a href="source.html" class="footer-title source">Quellen</a>
+        </div>
     </div>
-
-  </div>
 </footer>
 
 <!-- Chat Icon and Chat Window -->
 <div id="chat-icon" class="chat-icon">
-  <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+    <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
 </div>
 
 <div id="chat-window" class="chat-window hidden">
-  <div class="chat-header">
-    <h3>Live Chatbot</h3>
-    <button id="close-chat" class="close-chat">&times;</button>
-  </div>
-  <div id="chat-content" class="chat-content">
-    <div class="chat-message bot">Hallo! Wie kann ich dir helfen?</div>
-  </div>
-  <div class="chat-input-container">
-    <input id="chat-input" type="text" placeholder="Nachricht eingeben...">
-    <button id="send-message" class="send-message">Senden</button>
-  </div>
+    <div class="chat-header">
+        <h3>Live Chatbot</h3>
+        <button id="close-chat" class="close-chat">&times;</button>
+    </div>
+    <div id="chat-content" class="chat-content">
+        <div class="chat-message bot">Hallo! Wie kann ich dir helfen?</div>
+    </div>
+    <div class="chat-input-container">
+        <input id="chat-input" type="text" placeholder="Nachricht eingeben...">
+        <button id="send-message" class="send-message">Senden</button>
+    </div>
 </div>
 
 

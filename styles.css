@@ -454,9 +454,30 @@ h2.section-title, #instructionText {
 }
 
 /* footer */
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-brand, .footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links {
+    margin-top: 2rem; /* Adjust this value as needed to align with the "Kontakt" title */
+}
+
 .footer-contact-link {
     color: white;
 }
+
+.footer-title {
+    font-size: var(--fs-2);
+    color: var(--white);
+}
+
 
 /* Chat Icon */
 .chat-icon {
