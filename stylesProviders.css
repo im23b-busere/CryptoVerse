@@ -78,7 +78,6 @@ header {
     margin-right: 30px;
 }
 
-
 .container {
     display: flex;
     align-items: center;
@@ -145,18 +144,21 @@ header {
 /* Pros and Cons Styling */
 .pros-cons {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: flex-start;
+
 }
 
 .pros, .cons {
-    flex: 1;
+    flex: 0.5;
 }
 
-.pros-title, .cons-title {
-    font-size: var(--fs-5);
-    color: var(--light-blue);
-    margin-bottom: 0.5rem;
+.cons {
+    flex: 1;
+    margin-left: -1.5rem;
 }
+
 
 .pros-list, .cons-list {
     list-style: none;
@@ -164,10 +166,27 @@ header {
     margin: 0;
 }
 
-.pros-list li, .cons-list li {
+.pros-list li::before, .cons-list li::before {
+    content: '';
+    display: inline-block;
+    margin-right: 0.5rem;
     font-size: var(--fs-7);
-    color: var(--white);
-    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.pros-list li::before {
+    content: '+';
+    color: var(--medium-sea-green);
+}
+
+.cons-list li::before {
+    content: '-';
+    color: var(--presian-red);
+}
+
+/* Entferne Überschriften für Pros und Cons */
+.pros-title, .cons-title {
+    display: none;
 }
 
 [data-section] > * {
