@@ -258,3 +258,81 @@ header {
     justify-content: flex-end;
     gap: 5px;
 }
+
+.top-providers {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Alle Boxen haben die gleiche Höhe */
+    gap: 2rem;
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: var(--raisin-black);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px var(--black_10);
+}
+
+.top-providers .provider {
+    flex: 1; /* Macht die Boxen gleich breit */
+    display: flex;
+    flex-direction: column; /* Inhalt wird vertikal angeordnet */
+    justify-content: space-between; /* Verteilt Inhalte gleichmäßig */
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid var(--gainsboro);
+    border-radius: 8px;
+    background-color: var(--eerie-black-2);
+}
+
+.top-providers .provider-logo {
+    max-width: 80px;
+    margin: 0 auto 1rem; /* Zentriert das Logo */
+}
+
+.top-providers .provider-name {
+    font-size: var(--fs-3);
+    color: var(--white);
+    margin-bottom: 0.5rem;
+}
+
+.top-providers .rating-number {
+    font-size: var(--fs-4);
+    font-weight: bold;
+    color: var(--medium-sea-green);
+    margin: 0.5rem 0;
+}
+
+.top-providers .btn {
+    margin-top: 1rem;
+}
+
+.top-providers .best-rated {
+    border-color: var(--blue-crayola);
+}
+
+.top-providers .recommended {
+    border-color: var(--blue-crayola);
+}
+
+.top-providers .provider {
+    display: flex;
+    flex-direction: column; /* Vertically align elements */
+    align-items: center; /* Center horizontally */
+    justify-content: space-between; /* Space out elements evenly */
+}
+
+.top-providers .provider .btn {
+    margin: 0 auto; /* Center the button horizontally */
+}
+
+.provider-label {
+    font-size: var(--fs-6); /* Adjust to your preference */
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--blue-crayola);
+    background-color: var(--eerie-black-1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: inline-block;
+    text-align: center;
+}
