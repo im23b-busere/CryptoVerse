@@ -262,7 +262,7 @@ header {
 .top-providers {
     display: flex;
     justify-content: space-between;
-    align-items: stretch; /* Alle Boxen haben die gleiche Höhe */
+    align-items: stretch;
     gap: 2rem;
     margin: 2rem 0;
     padding: 1rem;
@@ -271,11 +271,28 @@ header {
     box-shadow: 0 4px 6px var(--black_10);
 }
 
+.best-rated{
+    transition: transform var(--transition-1), box-shadow var(--transition-1);
+}
+
+.recommended{
+    transition: transform var(--transition-1), box-shadow var(--transition-1);
+}
+.best-rated:hover {
+    transform: scale(1.05);
+    box-shadow: 6px 8px var(--smocky-black_30);
+}
+
+.recommended:hover {
+    transform: scale(1.05);
+    box-shadow: 6px 8px var(--smocky-black_30);
+}
+
 .top-providers .provider {
-    flex: 1; /* Macht die Boxen gleich breit */
+    flex: 1;
     display: flex;
-    flex-direction: column; /* Inhalt wird vertikal angeordnet */
-    justify-content: space-between; /* Verteilt Inhalte gleichmäßig */
+    flex-direction: column;
+    justify-content: space-between;
     text-align: center;
     padding: 1rem;
     border: 1px solid var(--gainsboro);
@@ -315,17 +332,17 @@ header {
 
 .top-providers .provider {
     display: flex;
-    flex-direction: column; /* Vertically align elements */
-    align-items: center; /* Center horizontally */
-    justify-content: space-between; /* Space out elements evenly */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .top-providers .provider .btn {
-    margin: 0 auto; /* Center the button horizontally */
+    margin: 0 auto;
 }
 
 .provider-label {
-    font-size: var(--fs-6); /* Adjust to your preference */
+    font-size: var(--fs-6);
     font-weight: bold;
     text-transform: uppercase;
     color: var(--blue-crayola);
