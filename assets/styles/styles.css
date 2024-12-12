@@ -635,83 +635,17 @@ footer {
     background-color: var(--light-blue);
 }
 
-/* Mobile Styles */
-@media (max-width: 768px) {
-    header .container {
-        flex-direction: column;
-        align-items: flex-start;
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none;
     }
 
-    .navbar ul {
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
+    .navbar {
+        display: flex; /* or block, depending on your layout */
     }
 
-    .navbar ul li a {
-        text-align: left;
-        padding: 10px 20px;
-        width: 100%;
-    }
-
-    .hero .container {
-        margin: 20px;
-        display: block;
-    }
-
-    .hero-content, .hero-banner {
-        text-align: center;
-    }
-
-    .hero-banner img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .live-prices {
-        flex-direction: column;
-    }
-
-    .live-prices li {
-        width: 90%;
-        margin: 15px auto;
-    }
-
-    .info-content, .info-banner {
-        max-width: 100%;
-        margin: auto;
-        text-align: center;
-    }
-
-    .instruction-list {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .providers .container {
-        grid-template-columns: 1fr;
-        margin: 0;
-    }
-
-    .provider-banner img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    footer .footer-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    footer .footer-section {
-        text-align: center;
-    }
 }
-/* Standard (Desktop) Einstellungen */
-.menu-toggle {
-    display: none;
-}
+
 
 /* Mobile Styles */
 @media (max-width: 768px) {
@@ -900,5 +834,4 @@ footer {
     .instruction-list li::after {
         display: none;
     }
-
 }

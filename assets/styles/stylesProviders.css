@@ -434,6 +434,12 @@ footer {
     color: var(--blue-crayola);
 }
 
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
 /* Mobile Styles */
 @media (max-width: 768px) {
     .providers .container {
