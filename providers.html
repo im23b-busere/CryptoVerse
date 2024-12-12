@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
+    <!-- IONIC ICONS FRAMEWORK -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@6.0.3/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@6.0.3/dist/ionicons/ionicons.js"></script>
+
     <script src="scriptProviders.js" defer></script>
 
 </head>
@@ -36,7 +40,7 @@
 
 <!-- MAIN -->
 <main>
-    <section class="section providers-list">
+    <section class="section providers-list" id="hero">
         <div class="container" id="providersContainer">
             <h1 class="section-title">Vergleich der Anbieter</h1>
             <p class="section-text">
@@ -385,7 +389,54 @@
         </div>
     </section>
 </main>
+<!-- FOOTER -->
+<footer>
+    <div class="container footer-container">
+        <!-- Contact Section -->
+        <div class="footer-section">
+            <h2 class="footer-title">Kontakt</h2>
+            <ul class="footer-contact-list">
+                <li><a href="mailto:erik.buser@student.ksh.ch" class="footer-contact-link">erik.buser@student.ksh.ch</a>
+                </li>
+                <li><a href="mailto:sandro.schmid@student.ksh.ch" class="footer-contact-link">sandro.schmid@student.ksh.ch</a>
+                </li>
+                <li><a href="mailto:joshua.federi@student.ksh.ch" class="footer-contact-link">joshua.federi@student.ksh.ch</a>
+                </li>
+            </ul>
+        </div>
 
+        <!-- Quick Links Section -->
+        <div class="footer-section">
+            <h2 class="footer-title">Links</h2>
+            <ul class="footer-links">
+                <li><a href="source.html" class="footer-link">Quellen</a></li>
+                <li><a href="#hero" class="footer-link">Zurück nach oben</a></li>
+            </ul>
+        </div>
+
+        <!-- github Section -->
+        <div class="footer-section">
+            <h2 class="footer-title">Folge uns</h2>
+            <div class="footer-socials">
+                <a href="https://github.com/im23b-busere" class="footer-social-link" target="_blank"
+                   rel="noopener noreferrer">
+                    <ion-icon name="logo-github"></ion-icon>
+                    Erik Buser
+                </a>
+                <a href="https://github.com/im23b-schmids3" class="footer-social-link" target="_blank"
+                   rel="noopener noreferrer">
+                    <ion-icon name="logo-github"></ion-icon>
+                    Sandro Schmid
+                </a>
+                <a href="https://github.com/im23b-federij" class="footer-social-link" target="_blank"
+                   rel="noopener noreferrer">
+                    <ion-icon name="logo-github"></ion-icon>
+                    Joshua Federi
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
