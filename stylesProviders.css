@@ -214,6 +214,34 @@ header {
     background-color: var(--light-blue);
 }
 
+.p-container {
+    display: flex;
+    flex-direction: row;
+    gap: 18.5rem;
+}
+.rating-container {
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.rating-number {
+    font-size: var(--fs-4);
+    font-weight: 700;
+    color: var(--maximum-yellow-red);
+    margin-bottom: 5px;
+}
+
+.rating-static .star {
+    font-size: 2.8rem;
+    color: #666;
+}
+
+.rating-static .star.filled {
+    color: #ffa723;
+}
+
 [data-section] > * {
     transform: translateY(50px);
     opacity: 0;
@@ -224,6 +252,15 @@ header {
     opacity: 1;
     transform: translateY(0);
 }
+
+.rating-static {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+
+
 
 
 
