@@ -253,6 +253,8 @@ header {
     transform: translateY(0);
 }
 
+/* Providers Sections */
+
 .rating-static {
     display: flex;
     justify-content: flex-end;
@@ -352,4 +354,13 @@ header {
     margin-bottom: 10px;
     display: inline-block;
     text-align: center;
+}
+
+.provider-card {
+    transition: transform var(--transition-1), box-shadow var(--transition-1);
+}
+
+.provider-card:hover {
+    transform: scale(1.01);
+    box-shadow: 6px 8px var(--smocky-black_30);
 }
