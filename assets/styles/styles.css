@@ -57,7 +57,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    transform: translateX(-30px);
 }
 
 .logo {
@@ -102,6 +101,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    z-index: 1000;
 }
 
 .navbar ul {
@@ -654,16 +654,30 @@ footer {
         display: flex;
     }
 
+    header {
+        margin-left: -30px;
+    }
+
+
     .navbar ul {
         flex-direction: column;
         gap: 10px;
         width: 100%
+    }
+    .navbar ul li {
+        background-color: var(--eerie-black-2);
+        width: 100%;
+        z-index: 1000;
     }
 
     .navbar ul li a {
         text-align: left;
         padding: 10px 20px;
         width: 100%;
+    }
+
+    .hero-content {
+        z-index: 1;
     }
 
     .hero .container {
@@ -730,6 +744,7 @@ footer {
         font-size: 2rem;
         cursor: pointer;
         color: var(--white);
+        z-index: 1001;
     }
 
     .navbar {
@@ -737,10 +752,10 @@ footer {
         flex-direction: column;
         background-color: var(--eerie-black-2);
         position: absolute;
-        top: 140px;
+        top: 120px;
         left: 0;
         width: 100%;
-        z-index: 1001;
+        z-index: 1002;
         padding: 10px 0;
     }
 
