@@ -97,6 +97,12 @@ header {
     padding: 10px 20px 20px 20px;
 }
 
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
 .navbar ul {
     display: flex;
     margin: 0;
@@ -627,4 +633,272 @@ footer {
 
 .send-message:hover {
     background-color: var(--light-blue);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .navbar ul li a {
+        text-align: left;
+        padding: 10px 20px;
+        width: 100%;
+    }
+
+    .hero .container {
+        margin: 20px;
+        display: block;
+    }
+
+    .hero-content, .hero-banner {
+        text-align: center;
+    }
+
+    .hero-banner img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .live-prices {
+        flex-direction: column;
+    }
+
+    .live-prices li {
+        width: 90%;
+        margin: 15px auto;
+    }
+
+    .info-content, .info-banner {
+        max-width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .instruction-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .providers .container {
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+
+    .provider-banner img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    footer .footer-section {
+        text-align: center;
+    }
+}
+/* Standard (Desktop) Einstellungen */
+.menu-toggle {
+    display: none;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .navbar ul li a {
+        text-align: left;
+        padding: 10px 20px;
+        width: 100%;
+    }
+
+    .hero .container {
+        margin: 20px;
+        display: block;
+    }
+
+    .hero-content, .hero-banner {
+        text-align: center;
+    }
+
+    .hero-banner img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .live-prices {
+        flex-direction: column;
+    }
+
+    .live-prices li {
+        width: 90%;
+        margin: 15px auto;
+    }
+
+    .info-content, .info-banner {
+        max-width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .instruction-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .providers .container {
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+
+    .provider-banner img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    footer .footer-section {
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        color: var(--white);
+    }
+
+    .navbar {
+        display: none; /* Initially hidden */
+        flex-direction: column;
+        background-color: var(--eerie-black-2);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        padding: 10px 0;
+    }
+
+    .navbar.hidden {
+        display: none;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar ul li a {
+        text-align: center;
+        padding: 10px;
+        display: block;
+        color: var(--white);
+        text-decoration: none;
+    }
+
+    .navbar ul li a:hover {
+        background-color: var(--blue-crayola);
+    }
+
+    .info .container {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    .info-banner {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .info-banner img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .info-content {
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: var(--fs-4);
+    }
+
+    .section-text, .item-text {
+        font-size: var(--fs-7);
+    }
+
+    .list-title {
+        font-size: var(--fs-6);
+    }
+
+    .instruction-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .instruction-card {
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 20px;
+        background-color: var(--eerie-black-1);
+        border-radius: 10px;
+        box-shadow: 0 4px 10px var(--black_10);
+    }
+
+    .instruction-card .card-banner {
+        margin-bottom: 15px;
+    }
+
+    .instruction-card .img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .instruction-card .card-subtitle {
+        font-size: var(--fs-7);
+    }
+
+    .instruction-card .card-title {
+        font-size: var(--fs-5);
+    }
+
+    .instruction-card .card-text {
+        font-size: var(--fs-7);
+        padding-inline: 10px;
+    }
+
+    .instruction-list li::after {
+        display: none;
+    }
+
 }

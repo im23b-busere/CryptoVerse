@@ -146,3 +146,16 @@ async function getBotReply(userMessage) {
         return 'Entschuldigung, es ist ein Fehler aufgetreten.';
     }
 }
+
+
+const menuToggle = document.getElementById("menu-toggle");
+const navbar = document.querySelector(".navbar");
+
+menuToggle.addEventListener("click", () => {
+    navbar.classList.toggle("hidden");
+});
+
+
+
+
+
