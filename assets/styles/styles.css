@@ -57,6 +57,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    transform: translateX(-30px);
 }
 
 .logo {
@@ -533,7 +534,7 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color:var(--blue-crayola);
+    background-color: var(--blue-crayola);
     color: white;
     border-radius: 50%;
     width: 50px;
@@ -624,7 +625,7 @@ footer {
 }
 
 .send-message {
-    background-color:  var(--blue-crayola);
+    background-color: var(--blue-crayola);
     color: white;
     border: none;
     padding: 5px 10px;
@@ -641,7 +642,7 @@ footer {
     }
 
     .navbar {
-        display: flex; /* or block, depending on your layout */
+        display: flex;
     }
 
 }
@@ -650,14 +651,13 @@ footer {
 /* Mobile Styles */
 @media (max-width: 768px) {
     header .container {
-        flex-direction: column;
-        align-items: flex-start;
+        display: flex;
     }
 
     .navbar ul {
         flex-direction: column;
         gap: 10px;
-        width: 100%;
+        width: 100%
     }
 
     .navbar ul li a {
@@ -717,6 +717,9 @@ footer {
     }
 
     footer .footer-section {
+    }
+
+    footer .footer-section {
         text-align: center;
     }
 
@@ -737,7 +740,7 @@ footer {
         top: 140px;
         left: 0;
         width: 100%;
-        z-index: 1000;
+        z-index: 1001;
         padding: 10px 0;
     }
 
