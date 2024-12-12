@@ -1,14 +1,14 @@
 /* custom properties */
 :root {
     /* font sizes */
-    --fs-1: clamp(2.5rem, 5vw, 3.2rem);
-    --fs-2: clamp(2rem, 4vw, 3rem);
-    --fs-3: clamp(1.8rem, 3.5vw, 2.4rem);
-    --fs-4: clamp(1.5rem, 3vw, 2rem);
-    --fs-5: clamp(1.3rem, 2.5vw, 1.8rem);
-    --fs-6: clamp(1.2rem, 2vw, 1.5rem);
-    --fs-7: clamp(1rem, 1.5vw, 1.4rem);
-    --fs-8: clamp(0.9rem, 1.2vw, 1.2rem);
+    --fs-1: 3.2rem;
+    --fs-2: 3rem;
+    --fs-3: 2.4rem;
+    --fs-4: 2rem;
+    --fs-5: 1.8rem;
+    --fs-6: 1.5rem;
+    --fs-7: 1.4rem;
+    --fs-8: 1.2rem;
 
     /* font family */
     --ff-dm-sans: "DM Sans", sans-serif;
@@ -56,8 +56,9 @@ body {
 }
 
 h2 {
-    font-size: var(--fs-2);
+    font-size: var(--fs-2)
 }
+
 
 header {
     display: flex;
@@ -83,6 +84,7 @@ header {
     padding: 10px 20px 20px 20px;
 }
 
+
 .navbar ul {
     display: flex;
     margin: 0;
@@ -97,12 +99,14 @@ header {
     color: var(--white);
 }
 
-.navbar-link.active,
-.navbar-link:hover {
+
+.navbar-link.active, .navbar-link:hover {
     background-color: var(--blue-crayola);
 }
 
-/* Styling for Provider Cards */
+
+/* Styling für Provider Cards */
+
 #providersContainer {
     display: grid;
 }
@@ -140,13 +144,11 @@ header {
 /* Pros and Cons Styling */
 .pros-cons {
     display: flex;
-    gap: 1rem;
     justify-content: space-between;
     align-items: flex-start;
 }
 
-.pros,
-.cons {
+.pros, .cons {
     flex: 0.5;
 }
 
@@ -155,15 +157,14 @@ header {
     margin-left: -1.5rem;
 }
 
-.pros-list,
-.cons-list {
+
+.pros-list, .cons-list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.pros-list li::before,
-.cons-list li::before {
+.pros-list li::before, .cons-list li::before {
     content: '';
     display: inline-block;
     margin-right: 0.5rem;
@@ -181,9 +182,8 @@ header {
     color: var(--presian-red);
 }
 
-/* Remove Pros and Cons Titles */
-.pros-title,
-.cons-title {
+/* Entferne Überschriften für Pros und Cons */
+.pros-title, .cons-title {
     display: none;
 }
 
@@ -201,33 +201,29 @@ header {
 }
 
 .btn-primary {
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
-    display: inline-block;
-    text-align: center;
+    margin-top: auto;
+    position: static;
 }
 
-.btn-primary:hover,
-.btn-primary:focus {
+.btn-primary:hover, .btn-primary:focus {
     background-color: var(--light-blue);
 }
 
 .p-container {
     display: flex;
     flex-direction: row;
-    gap: 18.5rem;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding-right: 1rem;
 }
 
-/* Rating Section */
 .rating-container {
-    position: relative;
-    align-items: center;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     flex-direction: column;
-    text-align: center;
-    padding: 10px;
-    gap: 10px;
+    margin-top: auto;
 }
 
 .rating-number {
@@ -237,14 +233,8 @@ header {
     margin-bottom: 5px;
 }
 
-.rating-static {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-}
-
 .rating-static .star {
-    font-size: clamp(2rem, 5vw, 2.8rem);
+    font-size: 2.8rem;
     color: #666;
 }
 
@@ -252,7 +242,6 @@ header {
     color: #ffa723;
 }
 
-/* Data Section Transitions */
 [data-section] > * {
     transform: translateY(50px);
     opacity: 0;
@@ -264,32 +253,8 @@ header {
     transform: translateY(0);
 }
 
-/* Media Queries for Smaller Screens */
-@media (max-width: 768px) {
-    .rating-container {
-        gap: 8px;
-    }
-
-    .rating-number {
-        font-size: var(--fs-5);
-    }
-
-    .rating-static .star {
-        font-size: clamp(1.8rem, 4vw, 2.4rem);
-    }
-}
-
-@media (min-width: 1200px) {
-    .rating-container {
-        padding: 20px;
-        gap: 12px;
-    }
-
-    .rating-number {
-        font-size: var(--fs-3);
-    }
-
-    .rating-static .star {
-        font-size: 3rem;
-    }
+.rating-static {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
 }
