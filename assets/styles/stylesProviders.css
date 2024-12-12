@@ -514,19 +514,27 @@ footer {
         flex-direction: column;
         background-color: var(--eerie-black-2);
         position: absolute;
-        top: 100%;
+        top: 120px;
         left: 0;
         width: 100%;
-        z-index: 999;
+        z-index: 1000;
         padding: 10px 0;
     }
 
-    .navbar-list {
+    .navbar.mobile-open {
+        display: block;
+    }
+
+    .navbar.hidden {
+        display: none;
+    }
+
+    .navbar ul {
         flex-direction: column;
         gap: 10px;
     }
 
-    .navbar-item a {
+    .navbar ul li a {
         text-align: center;
         padding: 10px;
         display: block;
@@ -534,14 +542,9 @@ footer {
         text-decoration: none;
     }
 
-    .navbar-item a:hover {
+    .navbar ul li a:hover {
         background-color: var(--blue-crayola);
     }
-
-    .navbar.hidden {
-        display: none;
-    }
-
 
 
 }

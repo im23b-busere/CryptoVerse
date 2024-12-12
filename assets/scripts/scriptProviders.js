@@ -27,11 +27,12 @@ scrollReveal();
 
 addEventOnElem(window, "scroll", scrollReveal);
 
-document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navbar = document.querySelector('.navbar');
+const menuToggle = document.getElementById("menu-toggle");
+const navbar = document.querySelector(".navbar");
 
-    menuToggle.addEventListener('click', function() {
-        navbar.classList.toggle('hidden');
-    });
+menuToggle.addEventListener("click", () => {
+    navbar.classList.toggle("hidden");
+    if (window.innerWidth <= 768) {
+        navbar.classList.toggle("mobile-open");
+    }
 });

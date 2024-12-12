@@ -734,11 +734,15 @@ footer {
         flex-direction: column;
         background-color: var(--eerie-black-2);
         position: absolute;
-        top: 100%;
+        top: 140px;
         left: 0;
         width: 100%;
-        z-index: 999;
+        z-index: 1000;
         padding: 10px 0;
+    }
+
+    .navbar.mobile-open {
+        display: block;
     }
 
     .navbar.hidden {

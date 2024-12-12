@@ -153,6 +153,9 @@ const navbar = document.querySelector(".navbar");
 
 menuToggle.addEventListener("click", () => {
     navbar.classList.toggle("hidden");
+    if (window.innerWidth <= 768) {
+        navbar.classList.toggle("mobile-open");
+    }
 });
 
 
