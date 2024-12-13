@@ -753,7 +753,12 @@ footer {
         font-size: 2rem;
         cursor: pointer;
         color: var(--white);
+        min-width: 50px;
+        position: fixed;
+        top: 50px;
+        right: 10px;
         z-index: 1001;
+
     }
 
     .navbar {

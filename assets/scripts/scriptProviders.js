@@ -36,3 +36,12 @@ menuToggle.addEventListener("click", () => {
         navbar.classList.toggle("mobile-open");
     }
 });
+
+// hiding menu on mobile inspired by: https://stackoverflow.com/questions/31223341/detecting-scroll-direction
+window.addEventListener('scroll', function() {
+    if (window.scrollY === 0) {
+        menuToggle.style.display = 'block';
+    } else {
+        menuToggle.style.display = 'none';
+    }
+});

@@ -520,6 +520,11 @@ footer {
         font-size: 2rem;
         cursor: pointer;
         color: var(--white);
+        min-width: 50px;
+        position: fixed;
+        top: 40px;
+        right: 30px;
+        z-index: 1001;
     }
 
     .navbar {
