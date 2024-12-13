@@ -650,12 +650,21 @@ footer {
 
 /* Mobile Styles */
 @media (max-width: 768px) {
+
+    .section {
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+
     header .container {
         display: flex;
     }
 
     header {
-        margin-left: -30px;
+        margin-left: -45px;
+        overflow: hidden;
     }
 
 

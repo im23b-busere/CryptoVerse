@@ -445,10 +445,17 @@ footer {
 /* Mobile Styles */
 @media (max-width: 768px) {
     header {
-        transform: translateX(-30px);
+        margin-left: -45px;
+        overflow: hidden;
     }
+    body {
+        overflow-x: hidden;
+    }
+
+
     .providers .container {
         padding: 0 10px;
+        box-sizing: border-box;
     }
 
     .providers-grid {
@@ -458,6 +465,7 @@ footer {
     .provider-card {
         margin-bottom: 20px;
         padding: 1rem;
+        box-sizing: border-box;
     }
 
     .provider-name {
