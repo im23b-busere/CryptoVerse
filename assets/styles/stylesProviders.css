@@ -524,6 +524,7 @@ footer {
         position: fixed;
         top: 40px;
         right: 30px;
+        left: 330px;
         z-index: 1001;
     }
 
