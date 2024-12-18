@@ -671,8 +671,9 @@ footer {
     .navbar ul {
         flex-direction: column;
         gap: 10px;
-        width: 100%
+        width: 100%;
     }
+
     .navbar ul li {
         background-color: var(--eerie-black-2);
         width: 100%;
