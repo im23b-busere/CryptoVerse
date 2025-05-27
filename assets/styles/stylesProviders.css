@@ -131,6 +131,18 @@ header {
     width: 100%;
 }
 
+/* Animation styles */
+[data-section] {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: var(--transition-3);
+}
+
+[data-section].active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* Styling für Provider Cards */
 #providersContainer {
     display: grid;
